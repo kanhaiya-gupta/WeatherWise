@@ -1,0 +1,35 @@
+stages:
+  preprocess:
+    cmd: python src/preprocessing/preprocess.py
+    deps:
+      - data/raw/weather.csv
+    outs:
+      - data/processed/train_X.csv
+      - data/processed/test_X.csv
+      - data/processed/train_y.csv
+      - data/processed/test_y.csv
+  train:
+    cmd: python src/training/train.py
+    deps:
+      - data/processed/train_X.csv
+      - data/processed/train_y.csv
+      - src/models/model.py
+    outs:
+      - models/model.pkl
+  tune:
+    cmd: python scripts/hp_tuning.py
+    deps:
+      - data/processed/train_X.csv
+      - data/processed/train_y.csv
+      - config/hp_config.json
+    outs:
+      - models/best_model.pkl
+  evaluate:
+    cmd: python src/evaluation/evaluate.py
+    deps:
+      - data/processed/test_X.csv
+      - data/processed/test_y.csv
+      - models/best_model.pkl
+    outs:
+      - reports/metrics.json
+      - reports/confusion_matrix.png

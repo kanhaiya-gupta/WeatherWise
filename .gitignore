@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Data
+data/processed/*
+!data/processed/.gitkeep
+data/raw/*
+!data/raw/weather.csv
+!data/raw/.gitkeep
+
+# Reports
+reports/*
+!reports/metrics.json
+!reports/confusion_matrix.png
+!reports/metrics_bar.png
+
+# Notebooks
+notebooks/*.ipynb
+!notebooks/.gitkeep
+
+# Models
+models/*
+!models/.gitkeep
+
+# Tests
+tests/__pycache__/
+
+# Docker
+*.log
+.DS_Store
+.env
+
+# DVC
+.dvc/
+.dvcignore
