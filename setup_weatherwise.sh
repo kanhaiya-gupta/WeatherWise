@@ -2,12 +2,9 @@
 
 # Script to create the WeatherWise project with Python files, CI/CD, FastAPI, and more
 
-# Define the project root directory
-PROJECT_DIR="WeatherWise"
-
-# Create the main project directory
-echo "Creating project directory: $PROJECT_DIR"
-mkdir -p "$PROJECT_DIR"
+# Use the current directory as the project root
+PROJECT_DIR="$(pwd)"
+echo "Setting up project in current directory: $PROJECT_DIR"
 
 # Create subdirectories
 echo "Creating subdirectories..."
