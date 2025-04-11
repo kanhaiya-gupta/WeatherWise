@@ -1,4 +1,0 @@
-Date,Location,MinTemp,MaxTemp,Rainfall,Evaporation,Sunshine,WindGustDir,WindGustSpeed,WindDir9am,WindDir3pm,WindSpeed9am,WindSpeed3pm,Humidity9am,Humidity3pm,Pressure9am,Pressure3pm,Cloud9am,Cloud3pm,Temp9am,Temp3pm,RainToday,RISK_MM,RainTomorrow
-2008-12-01,Albury,13.4,22.9,0.6,,,W,44.0,W,WNW,20.0,24.0,71.0,22.0,1007.7,1007.1,8.0,,16.9,21.8,No,0.0,No
-2008-12-02,Albury,7.4,25.1,0.0,,,WNW,44.0,NNW,WSW,4.0,22.0,44.0,25.0,1010.6,1007.8,,,17.2,24.3,No,0.0,No
-2008-12-03,Albury,12.9,25.7,0.0,,,WSW,46.0,W,WSW,19.0,26.0,38.0,30.0,1007.6,1008.7,,2.0,21.0,23.2,No,0.0,No
