@@ -16,7 +16,7 @@ on:
     inputs:
       reason:
         description: 'Reason for manually triggering the workflow'
-        required: true
+        required: false
         default: 'Manual run requested'
 
 # Define jobs to be executed
