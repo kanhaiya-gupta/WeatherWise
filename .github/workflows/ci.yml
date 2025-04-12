@@ -1,10 +1,25 @@
 name: WeatherWise CI/CD
 
+# on:
+#   push:
+#     branches: [main]
+#   pull_request:
+#     branches: [main]
+
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_request:
-    branches: [main]
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for manually triggering the workflow'
+        required: false
+        default: 'Manual run requested'
+
 
 jobs:
   lint:
