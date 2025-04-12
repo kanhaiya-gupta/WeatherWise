@@ -1,0 +1,11 @@
+dataset_types:
+  - test
+  - train
+drop_colnames:
+  - Date
+target_column: RainTomorrow
+raw_dataset: data/raw/weather.csv
+processed_dataset: data/processed/weather.csv
+reports: reports
+models: models
+best_par: rfc_best_params.json
