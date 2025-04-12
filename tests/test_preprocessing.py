@@ -1,3 +1,5 @@
+def test_dummy():
+    assert 1 + 1 == 2
 # import pandas as pd
 # import os
 # from src.preprocessing.preprocess import preprocess_data
@@ -48,7 +50,3 @@
 #     os.remove(input_path)
 #     for f in os.listdir(output_dir):
 #         os.remove(os.path.join(output_dir, f))
-
-
-def test_dummy():
-    assert 1 + 1 == 2
