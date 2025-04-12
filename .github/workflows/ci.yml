@@ -1,4 +1,4 @@
-name: WeatherWise CI/CD
+#name: WeatherWise CI/CD
 
 # on:
 #   push:
@@ -6,7 +6,7 @@ name: WeatherWise CI/CD
 #   pull_request:
 #     branches: [main]
 
-on:
+#on:
   push:
     branches:
       - main

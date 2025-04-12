@@ -11,6 +11,7 @@ PROCESSED_DATASET = "data/processed/weather.csv"
 CONFIG_PATH = "config/hp_config.json"
 REPORTS = "reports"
 MODELS = "models"
+BEST_PAR = "rfc_best_params.json"
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 # Define the path for the 'reports' folder
@@ -20,6 +21,7 @@ MODEL_DIR = os.path.join(BASE_DIR, MODELS)
 os.makedirs(REPORTS_DIR, exist_ok=True)
 os.makedirs(MODEL_DIR, exist_ok=True)
 
+BEST_PAR_PATH = os.path.join(REPORTS_DIR, BEST_PAR)
 
 def delete_and_recreate_dir(path):
     try:

@@ -52,5 +52,8 @@ def main(model_type="random_forest"):
 
 if __name__ == "__main__":
     # Try different models
-    for model_type in ["random_forest", "neural_network", "logistic"]:
+    for model_type in ["random_forest"]:
         main(model_type)
+    #for model_type in ["random_forest", "neural_network", "logistic"]:
+    #    main(model_type)
+    
