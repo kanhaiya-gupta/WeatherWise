@@ -232,30 +232,42 @@ DVC is used to version datasets, models, and manage reproducible ML pipelines.
   - **Request Body** (JSON):
     ```json
     {
-      "MinTemp": 13.4,
-      "MaxTemp": 22.9,
-      "Rainfall": 0.6,
-      "WindGustSpeed": 44.0,
-      "WindSpeed9am": 20.0,
-      "WindSpeed3pm": 24.0,
-      "Humidity9am": 71.0,
-      "Humidity3pm": 22.0,
-      "Pressure9am": 1007.7,
-      "Pressure3pm": 1007.1,
-      "Temp9am": 16.9,
-      "Temp3pm": 21.8,
-      "RainToday": 0
-    }
+                    "Location": 0.543,
+                    "MinTemp": 13.4,
+                    "MaxTemp": 22.9,
+                    "Rainfall": 0.6,
+                    "Evaporation": 4.5,
+                    "Sunshine": 6.7,
+                    "WindGustDir": 0.61,
+                    "WindGustSpeed": 44.0,
+                    "WindDir9am": 0.48,
+                    "WindDir3pm": 0.55,
+                    "WindSpeed9am": 20.0,
+                    "WindSpeed3pm": 24.0,
+                    "Humidity9am": 71.0,
+                    "Humidity3pm": 22.0,
+                    "Pressure9am": 1007.7,
+                    "Pressure3pm": 1007.1,
+                    "Cloud9am": 8.0,
+                    "Cloud3pm": 5.0,
+                    "Temp9am": 16.9,
+                    "Temp3pm": 21.8,
+                    "RainToday": 0,
+                    "RISK_MM": 0.0
+                }
     ```
   - **Response**:
     ```json
-    {"rain_probability": 0.1234}
+    {"rain_probability": 0.8534}
     ```
   - **Example**:
     ```bash
     curl -X POST "http://localhost:8000/predict" \
          -H "Content-Type: application/json" \
-         -d '{"MinTemp": 13.4, "MaxTemp": 22.9, "Rainfall": 0.6, "WindGustSpeed": 44.0, "WindSpeed9am": 20.0, "WindSpeed3pm": 24.0, "Humidity9am": 71.0, "Humidity3pm": 22.0, "Pressure9am": 1007.7, "Pressure3pm": 1007.1, "Temp9am": 16.9, "Temp3pm": 21.8, "RainToday": 0}'
+         -d '{ "Location": 0.543, "MinTemp": 13.4, "MaxTemp": 22.9, "Rainfall": 0.6, "Evaporation": 4.5, "Sunshine": 6.7, "WindGustDir": 0.61, "WindGustSpeed": 44.0,
+                "WindDir9am": 0.48, "WindDir3pm": 0.55, "WindSpeed9am": 20.0, "WindSpeed3pm": 24.0, "Humidity9am": 71.0, "Humidity3pm": 22.0, "Pressure9am": 1007.7,
+                "Pressure3pm": 1007.1, "Cloud9am": 8.0, "Cloud3pm": 5.0, "Temp9am": 16.9, "Temp3pm": 21.8, "RainToday": 0, "RISK_MM": 0.0
+            }'
     ```
 
 ## Using Docker
