@@ -1,5 +1,6 @@
 import os
 import shutil
+import pandas as pd
 from pathlib import Path
 
 DATASET_TYPES = ["test", "train"]
@@ -7,6 +8,7 @@ DROP_COLNAMES = ["Date"]
 TARGET_COLUMN = "RainTomorrow"
 RAW_DATASET = "data/raw/weather.csv"
 PROCESSED_DATASET = "data/processed/weather.csv"
+CONFIG_PATH = "config/hp_config.json"
 REPORTS = "reports"
 MODELS = "models"
 

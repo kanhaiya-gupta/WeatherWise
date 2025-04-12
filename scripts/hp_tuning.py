@@ -33,8 +33,8 @@ import joblib # type: ignore
 import pandas as pd # type: ignore
 from sklearn.ensemble import RandomForestClassifier # type: ignore
 from sklearn.model_selection import GridSearchCV, train_test_split # type: ignore
-from src.utils.utils_and_constants import BASE_DIR, REPORTS_DIR # type: ignore
-from src.utils.utils_and_constants import PROCESSED_DATASET, get_hp_tuning_results # type: ignore
+from src.utils.utils_and_constants import BASE_DIR, REPORTS_DIR, CONFIG_PATH # type: ignore
+from src.utils.utils_and_constants import PROCESSED_DATASET, TARGET_COLUMN, get_hp_tuning_results # type: ignore
 
 def load_data(file_path):
     data = pd.read_csv(file_path)
@@ -48,10 +48,10 @@ def main():
 
     model = RandomForestClassifier()
     # Read the config file to define the hyperparameter search space
-    param_grid = json.load(open("____", "r"))
+    param_grid = json.load(open(CONFIG_PATH, "r"))
 
     # Perform Grid Search Cross Validation on training data
-    grid_search = ____(model, param_grid, cv=5, n_jobs=1, verbose=2)
+    grid_search = GridSearchCV(model, param_grid, cv=5, scoring='f1', n_jobs=1, verbose=2)
     grid_search.fit(X_train, y_train)
 
     best_params = grid_search.best_params_
