@@ -213,7 +213,7 @@ DVC is used to version datasets, models, and manage reproducible ML pipelines.
    - Open `http://localhost:8000/docs` for interactive Swagger UI.
    - Use tools like `curl` or Postman for API calls.
      
-<img src="./docs/WeatherWise_API.png" alt="Directory Structure" width="200" height="200">
+<img src="./docs/WeatherWise_API.png" alt="FastAPI" width="1100" height="600">
 
 ### API Endpoints
 - **GET `/health`**:
