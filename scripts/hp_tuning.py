@@ -27,12 +27,13 @@
 #                          '../config/hp_config.json', '../models/best_model.pkl')
     
 
-
+import os
 import json
 import joblib # type: ignore
 import pandas as pd # type: ignore
 from sklearn.ensemble import RandomForestClassifier # type: ignore
 from sklearn.model_selection import GridSearchCV, train_test_split # type: ignore
+from src.utils.utils_and_constants import BASE_DIR, REPORTS_DIR # type: ignore
 from src.utils.utils_and_constants import PROCESSED_DATASET, get_hp_tuning_results, load_data # type: ignore
 
 
@@ -54,11 +55,14 @@ def main():
     print(json.dumps(best_params, indent=2))
     print("==========================================================")
 
-    with open("../reports/rfc_best_params.json", "w") as outfile:
+    # Define the full path for the metrics file
+    metrics_file = os.path.join(REPORTS_DIR, 'rfc_best_params.json')
+    with open(metrics_file, "w") as outfile:
         json.dump(best_params, outfile)
 
     markdown_table = get_hp_tuning_results(grid_search)
-    with open("../docs/hp_tuning_results.md", "w") as markdown_file:
+    markdown_file_path = os.path.join(REPORTS_DIR, 'hp_tuning_results.md')
+    with open(markdown_file_path, "w") as markdown_file:
         markdown_file.write(markdown_table)
 
 
