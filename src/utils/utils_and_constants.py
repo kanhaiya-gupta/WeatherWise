@@ -2,22 +2,39 @@ import os
 import shutil
 import pandas as pd
 from pathlib import Path
+import yaml
 
-DATASET_TYPES = ["test", "train"]
-DROP_COLNAMES = ["Date"]
-TARGET_COLUMN = "RainTomorrow"
-RAW_DATASET = "data/raw/weather.csv"
-PROCESSED_DATASET = "data/processed/weather.csv"
-CONFIG_PATH = "config/hp_config.json"
-REPORTS = "reports"
-MODELS = "models"
-BEST_PAR = "rfc_best_params.json"
-
+# Define paths relative to the base directory
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-# Define the path for the 'reports' folder
+CONFIG_PATH = os.path.join(BASE_DIR, 'config', 'config.yaml')
+CONFIG_PATH_HP = os.path.join(BASE_DIR, 'config', 'hp_config.json')
+
+# Load configuration from YAML file
+def load_config():
+    try:
+        with open(CONFIG_PATH, 'r') as f:
+            return yaml.safe_load(f)
+    except FileNotFoundError:
+        raise FileNotFoundError(f"Configuration file not found at {CONFIG_PATH}")
+
+# Read configuration values
+config = load_config()
+
+# Assign configuration values to constants
+DATASET_TYPES = config.get('dataset_types', ['test', 'train'])
+DROP_COLNAMES = config.get('drop_colnames', ['Date'])
+TARGET_COLUMN = config.get('target_column', 'RainTomorrow')
+RAW_DATASET = os.path.join(BASE_DIR, config.get('raw_dataset', 'data/raw/weather.csv'))
+PROCESSED_DATASET = os.path.join(BASE_DIR, config.get('processed_dataset', 'data/processed/weather.csv'))
+REPORTS = config.get('reports', 'reports')
+MODELS = config.get('models', 'models')
+BEST_PAR = config.get('best_par', 'rfc_best_params.json')
+
+# Define directories
 REPORTS_DIR = os.path.join(BASE_DIR, REPORTS)
 MODEL_DIR = os.path.join(BASE_DIR, MODELS)
-# Create the 'reports', 'Models' directory if it doesn't exist
+
+# Create the 'reports' and 'models' directories if they don't exist
 os.makedirs(REPORTS_DIR, exist_ok=True)
 os.makedirs(MODEL_DIR, exist_ok=True)
 
