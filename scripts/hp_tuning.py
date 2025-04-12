@@ -34,8 +34,13 @@ import pandas as pd # type: ignore
 from sklearn.ensemble import RandomForestClassifier # type: ignore
 from sklearn.model_selection import GridSearchCV, train_test_split # type: ignore
 from src.utils.utils_and_constants import BASE_DIR, REPORTS_DIR # type: ignore
-from src.utils.utils_and_constants import PROCESSED_DATASET, get_hp_tuning_results, load_data # type: ignore
+from src.utils.utils_and_constants import PROCESSED_DATASET, get_hp_tuning_results # type: ignore
 
+def load_data(file_path):
+    data = pd.read_csv(file_path)
+    X = data.drop(TARGET_COLUMN, axis=1)
+    y = data[TARGET_COLUMN]
+    return X, y
 
 def main():
     X, y = load_data(PROCESSED_DATASET)

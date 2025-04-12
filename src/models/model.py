@@ -1,39 +1,34 @@
-# from sklearn.ensemble import RandomForestClassifier
-
-# def define_model():
-#     """Define the machine learning model."""
-#     model = RandomForestClassifier(random_state=42)
-#     return model
-
-
-import json
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
+from sklearn.neural_network import MLPClassifier
+from sklearn.linear_model import LogisticRegression
 
 RFC_FOREST_DEPTH = 2
 
 
-def train_model(X_train, y_train):
-    model = RandomForestClassifier(
-        max_depth=RFC_FOREST_DEPTH, n_estimators=5, random_state=1993
-    )
+def train_model(X_train, y_train, model_type="random_forest"):
+    """
+    Train a model based on the specified model_type.
+
+    Parameters:
+    - X_train: Training features
+    - y_train: Training labels
+    - model_type: String specifying the model ('random_forest', 'neural_network', 'logistic')
+
+    Returns:
+    - Trained model
+    """
+    if model_type == "random_forest":
+        model = RandomForestClassifier(
+            max_depth=RFC_FOREST_DEPTH, n_estimators=5, random_state=1993
+        )
+    elif model_type == "neural_network":
+        model = MLPClassifier(
+            hidden_layer_sizes=(100,), max_iter=200, random_state=1993
+        )
+    elif model_type == "logistic":
+        model = LogisticRegression(random_state=1993)
+    else:
+        raise ValueError(f"Unsupported model_type: {model_type}")
+
     model.fit(X_train, y_train)
     return model
-
-
-def evaluate_model(model, X_test, y_test, float_precision=4):
-    y_pred = model.predict(X_test)
-    accuracy = accuracy_score(y_test, y_pred)
-    precision = precision_score(y_test, y_pred)
-    recall = recall_score(y_test, y_pred)
-    f1 = f1_score(y_test, y_pred)
-    metrics = {
-        "accuracy": accuracy,
-        "precision": precision,
-        "recall": recall,
-        "f1_score": f1,
-    }
-
-    return json.loads(
-        json.dumps(metrics), parse_float=lambda x: round(float(x), float_precision)
-    )
