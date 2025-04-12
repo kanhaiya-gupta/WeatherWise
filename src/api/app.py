@@ -12,39 +12,58 @@ app = FastAPI(
 
 # Define input schema with constraints
 class WeatherInput(BaseModel):
+    Location: float
     MinTemp: float
     MaxTemp: float
     Rainfall: float
+    Evaporation: float
+    Sunshine: float
+    WindGustDir: float
     WindGustSpeed: float
+    WindDir9am: float
+    WindDir3pm: float
     WindSpeed9am: float
     WindSpeed3pm: float
     Humidity9am: float
     Humidity3pm: float
     Pressure9am: float
     Pressure3pm: float
+    Cloud9am: float
+    Cloud3pm: float
     Temp9am: float
     Temp3pm: float
-    RainToday: int
+    RainToday: int  # 0 for No, 1 for Yes
+    RISK_MM: float
 
     class Config:
-        schema_extra = {
-            "example": {
-                "MinTemp": 13.4,
-                "MaxTemp": 22.9,
-                "Rainfall": 0.6,
-                "WindGustSpeed": 44.0,
-                "WindSpeed9am": 20.0,
-                "WindSpeed3pm": 24.0,
-                "Humidity9am": 71.0,
-                "Humidity3pm": 22.0,
-                "Pressure9am": 1007.7,
-                "Pressure3pm": 1007.1,
-                "Temp9am": 16.9,
-                "Temp3pm": 21.8,
-                "RainToday": 0
-            }
+        json_schema_extra = {
+            "examples": [
+                {
+                    "Location": 0.543,
+                    "MinTemp": 13.4,
+                    "MaxTemp": 22.9,
+                    "Rainfall": 0.6,
+                    "Evaporation": 4.5,
+                    "Sunshine": 6.7,
+                    "WindGustDir": 0.61,
+                    "WindGustSpeed": 44.0,
+                    "WindDir9am": 0.48,
+                    "WindDir3pm": 0.55,
+                    "WindSpeed9am": 20.0,
+                    "WindSpeed3pm": 24.0,
+                    "Humidity9am": 71.0,
+                    "Humidity3pm": 22.0,
+                    "Pressure9am": 1007.7,
+                    "Pressure3pm": 1007.1,
+                    "Cloud9am": 8.0,
+                    "Cloud3pm": 5.0,
+                    "Temp9am": 16.9,
+                    "Temp3pm": 21.8,
+                    "RainToday": 0,
+                    "RISK_MM": 0.0
+                }
+            ]
         }
-
 # Load model with error handling
 try:
     MODEL_PATH = os.getenv("MODEL_PATH", os.path.join(os.path.dirname(__file__), "../../models/trained_model_random_forest.pkl"))
