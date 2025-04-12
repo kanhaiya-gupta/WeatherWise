@@ -1,0 +1,98 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: set PYTHONPATH=.&& python src/preprocessing/preprocess.py
+    deps:
+    - path: data/raw/weather.csv
+      hash: md5
+      md5: e602b116f50269aa781c0c910cd80db9
+      size: 2701130
+    - path: src/preprocessing/preprocess.py
+      hash: md5
+      md5: 365bc3ab06cf88ce02deb723d730c1ad
+      size: 4980
+    - path: src/utils/utils_and_constants.py
+      hash: md5
+      md5: 0d0c53bbdf25a837084aa1fc20734855
+      size: 2755
+    outs:
+    - path: data/processed/weather.csv
+      hash: md5
+      md5: 5a799ba072f8399633fbd5b922d7c499
+      size: 10526986
+  hp_tune:
+    cmd: set PYTHONPATH=.&& python scripts/hp_tuning.py
+    deps:
+    - path: config/hp_config.json
+      hash: md5
+      md5: 092f5a2dc34f0af46ee905ffc826aaaf
+      size: 88
+    - path: data/processed/weather.csv
+      hash: md5
+      md5: 5a799ba072f8399633fbd5b922d7c499
+      size: 10526986
+    - path: scripts/hp_tuning.py
+      hash: md5
+      md5: 8af7869446c929021929ac3be222e454
+      size: 1764
+    - path: src/utils/utils_and_constants.py
+      hash: md5
+      md5: 0d0c53bbdf25a837084aa1fc20734855
+      size: 2755
+    outs:
+    - path: reports/hp_tuning_results.md
+      hash: md5
+      md5: 1f466342d77b94ed62ebac18aa5a1775
+      size: 576
+    - path: reports/rfc_best_params.json
+      hash: md5
+      md5: f02ec8024ed5955e100c8fefbcf7a41b
+      size: 58
+  train:
+    cmd: set PYTHONPATH=.&& python src/training/train.py
+    deps:
+    - path: data/processed/weather.csv
+      hash: md5
+      md5: 5a799ba072f8399633fbd5b922d7c499
+      size: 10526986
+    - path: reports/rfc_best_params.json
+      hash: md5
+      md5: f02ec8024ed5955e100c8fefbcf7a41b
+      size: 58
+    - path: scripts/metrics_and_plots.py
+      hash: md5
+      md5: 7e86a1c13f759cb8d47a26e5309ac99c
+      size: 708
+    - path: src/models/model.py
+      hash: md5
+      md5: 04283e3b3affc154ba11df628f6e5d22
+      size: 1645
+    - path: src/training/train.py
+      hash: md5
+      md5: c1137b500cfb4166718cf2c5a3d7b399
+      size: 4893
+    - path: src/utils/utils_and_constants.py
+      hash: md5
+      md5: 0d0c53bbdf25a837084aa1fc20734855
+      size: 2755
+    outs:
+    - path: models/trained_model_random_forest.pkl
+      hash: md5
+      md5: 061a80d3eaccfc40011ba6ceab9b1938
+      size: 141433
+    - path: reports/confusion_matrix.png
+      hash: md5
+      md5: a282bfb2925763c53e5874a6dac0a719
+      size: 14988
+    - path: reports/metrics.json
+      hash: md5
+      md5: 4ea2f49411478deeb4c30942b9205751
+      size: 76
+    - path: reports/predictions.csv
+      hash: md5
+      md5: 2cb0ecb2ac3d7a8f3c0adbd61575ee3e
+      size: 31278
+    - path: reports/roc_curve.csv
+      hash: md5
+      md5: eeb108c65d0b17521a2be7bbca00da13
+      size: 224

@@ -16,7 +16,7 @@ on:
     inputs:
       reason:
         description: 'Reason for manually triggering the workflow'
-        required: false
+        required: true
         default: 'Manual run requested'
 
 # Define jobs to be executed
@@ -94,8 +94,8 @@ jobs:
         with:
           name: models  # Artifact name
           path: |
-            models/trained_model_logistic.pkl
-            models/trained_model_neural_network.pkl
+            #models/trained_model_logistic.pkl
+            #models/trained_model_neural_network.pkl
             models/trained_model_random_forest.pkl  # Upload all trained models
 
   # Job 4: Deploy the application by building and pushing a Docker image
