@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/5cc28bf2d5f04659aa05bfffd7233c3c/artifacts
+end_time: 1744713270971
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 5cc28bf2d5f04659aa05bfffd7233c3c
+run_name: funny-lynx-368
+run_uuid: 5cc28bf2d5f04659aa05bfffd7233c3c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744713270900
+status: 4
+tags: []
+user_id: kgupta

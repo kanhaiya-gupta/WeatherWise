@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/f2a48c1724d5463da87fa8b8c019b16f/artifacts
+end_time: 1744713661517
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: f2a48c1724d5463da87fa8b8c019b16f
+run_name: victorious-ape-301
+run_uuid: f2a48c1724d5463da87fa8b8c019b16f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744713661394
+status: 3
+tags: []
+user_id: kgupta

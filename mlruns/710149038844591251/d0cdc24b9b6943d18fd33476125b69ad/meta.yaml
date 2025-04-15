@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/710149038844591251/d0cdc24b9b6943d18fd33476125b69ad/artifacts
+end_time: 1744713598896
+entry_point_name: ''
+experiment_id: '710149038844591251'
+lifecycle_stage: active
+run_id: d0cdc24b9b6943d18fd33476125b69ad
+run_name: industrious-mole-341
+run_uuid: d0cdc24b9b6943d18fd33476125b69ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744713598823
+status: 4
+tags: []
+user_id: kgupta

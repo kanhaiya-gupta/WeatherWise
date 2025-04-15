@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/8de5245ce4f24e4ab56a4f02d72006dc/artifacts
+end_time: 1744712864017
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 8de5245ce4f24e4ab56a4f02d72006dc
+run_name: nervous-panda-220
+run_uuid: 8de5245ce4f24e4ab56a4f02d72006dc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744712863958
+status: 4
+tags: []
+user_id: kgupta

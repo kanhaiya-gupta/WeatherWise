@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/46db44b60ac54d94a4030f2d10d3536c/artifacts
+end_time: 1744714718609
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 46db44b60ac54d94a4030f2d10d3536c
+run_name: thoughtful-toad-304
+run_uuid: 46db44b60ac54d94a4030f2d10d3536c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714717935
+status: 4
+tags: []
+user_id: kgupta

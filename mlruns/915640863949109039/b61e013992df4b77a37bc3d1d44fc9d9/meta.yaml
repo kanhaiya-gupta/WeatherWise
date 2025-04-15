@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/b61e013992df4b77a37bc3d1d44fc9d9/artifacts
+end_time: 1744716618394
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: b61e013992df4b77a37bc3d1d44fc9d9
+run_name: capricious-bee-343
+run_uuid: b61e013992df4b77a37bc3d1d44fc9d9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744716618109
+status: 3
+tags: []
+user_id: kgupta

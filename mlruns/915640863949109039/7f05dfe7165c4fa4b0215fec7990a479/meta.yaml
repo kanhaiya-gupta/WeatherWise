@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/7f05dfe7165c4fa4b0215fec7990a479/artifacts
+end_time: 1744714492068
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 7f05dfe7165c4fa4b0215fec7990a479
+run_name: thoughtful-robin-138
+run_uuid: 7f05dfe7165c4fa4b0215fec7990a479
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714491664
+status: 4
+tags: []
+user_id: kgupta

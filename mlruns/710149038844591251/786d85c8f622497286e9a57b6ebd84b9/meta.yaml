@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/710149038844591251/786d85c8f622497286e9a57b6ebd84b9/artifacts
+end_time: 1744713696294
+entry_point_name: ''
+experiment_id: '710149038844591251'
+lifecycle_stage: active
+run_id: 786d85c8f622497286e9a57b6ebd84b9
+run_name: spiffy-vole-896
+run_uuid: 786d85c8f622497286e9a57b6ebd84b9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744713696210
+status: 4
+tags: []
+user_id: kgupta

@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/302f422702de48c9bff7d29d53d591ab/artifacts
+end_time: 1744712863675
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 302f422702de48c9bff7d29d53d591ab
+run_name: bedecked-midge-879
+run_uuid: 302f422702de48c9bff7d29d53d591ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744712863605
+status: 4
+tags: []
+user_id: kgupta

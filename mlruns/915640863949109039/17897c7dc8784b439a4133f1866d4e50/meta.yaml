@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/17897c7dc8784b439a4133f1866d4e50/artifacts
+end_time: 1744713401750
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 17897c7dc8784b439a4133f1866d4e50
+run_name: learned-fox-80
+run_uuid: 17897c7dc8784b439a4133f1866d4e50
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744713401600
+status: 3
+tags: []
+user_id: kgupta

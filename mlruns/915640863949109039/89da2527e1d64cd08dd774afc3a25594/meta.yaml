@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/89da2527e1d64cd08dd774afc3a25594/artifacts
+end_time: 1744714795720
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 89da2527e1d64cd08dd774afc3a25594
+run_name: luxuriant-whale-308
+run_uuid: 89da2527e1d64cd08dd774afc3a25594
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714794986
+status: 4
+tags: []
+user_id: kgupta

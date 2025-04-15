@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/56968255cbb54a41a85bbe0166d20359/artifacts
+end_time: 1744714979753
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 56968255cbb54a41a85bbe0166d20359
+run_name: invincible-mule-330
+run_uuid: 56968255cbb54a41a85bbe0166d20359
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714979514
+status: 3
+tags: []
+user_id: kgupta

@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/710149038844591251/daa7829675714fd4aa46010f74c555e2/artifacts
+end_time: 1744715255525
+entry_point_name: ''
+experiment_id: '710149038844591251'
+lifecycle_stage: active
+run_id: daa7829675714fd4aa46010f74c555e2
+run_name: thundering-bass-904
+run_uuid: daa7829675714fd4aa46010f74c555e2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744715255382
+status: 3
+tags: []
+user_id: kgupta

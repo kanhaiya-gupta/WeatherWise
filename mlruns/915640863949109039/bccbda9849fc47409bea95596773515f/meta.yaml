@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/bccbda9849fc47409bea95596773515f/artifacts
+end_time: 1744714933009
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: bccbda9849fc47409bea95596773515f
+run_name: fearless-donkey-240
+run_uuid: bccbda9849fc47409bea95596773515f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714932791
+status: 3
+tags: []
+user_id: kgupta

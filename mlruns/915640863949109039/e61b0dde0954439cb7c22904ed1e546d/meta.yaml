@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/e61b0dde0954439cb7c22904ed1e546d/artifacts
+end_time: 1744715031006
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: e61b0dde0954439cb7c22904ed1e546d
+run_name: intelligent-moth-708
+run_uuid: e61b0dde0954439cb7c22904ed1e546d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744715030096
+status: 3
+tags: []
+user_id: kgupta

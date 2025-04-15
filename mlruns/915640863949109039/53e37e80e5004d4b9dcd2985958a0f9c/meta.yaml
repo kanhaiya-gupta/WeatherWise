@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/53e37e80e5004d4b9dcd2985958a0f9c/artifacts
+end_time: 1744713314514
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 53e37e80e5004d4b9dcd2985958a0f9c
+run_name: luxuriant-swan-953
+run_uuid: 53e37e80e5004d4b9dcd2985958a0f9c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744713314424
+status: 4
+tags: []
+user_id: kgupta

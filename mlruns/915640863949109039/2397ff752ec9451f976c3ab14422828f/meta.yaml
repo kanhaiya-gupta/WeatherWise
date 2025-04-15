@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/2397ff752ec9451f976c3ab14422828f/artifacts
+end_time: 1744713278749
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 2397ff752ec9451f976c3ab14422828f
+run_name: clean-whale-15
+run_uuid: 2397ff752ec9451f976c3ab14422828f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744713278659
+status: 4
+tags: []
+user_id: kgupta

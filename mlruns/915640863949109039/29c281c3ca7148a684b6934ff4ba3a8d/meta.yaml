@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/29c281c3ca7148a684b6934ff4ba3a8d/artifacts
+end_time: 1744714448677
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 29c281c3ca7148a684b6934ff4ba3a8d
+run_name: omniscient-calf-168
+run_uuid: 29c281c3ca7148a684b6934ff4ba3a8d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714448155
+status: 4
+tags: []
+user_id: kgupta

@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/06d7982dd728403fbe74214866c33111/artifacts
+end_time: 1744714501223
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 06d7982dd728403fbe74214866c33111
+run_name: bald-quail-354
+run_uuid: 06d7982dd728403fbe74214866c33111
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714500828
+status: 4
+tags: []
+user_id: kgupta

@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/59f174a00fd140fcbbca4fc456223f40/artifacts
+end_time: 1744713727924
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 59f174a00fd140fcbbca4fc456223f40
+run_name: sassy-stag-609
+run_uuid: 59f174a00fd140fcbbca4fc456223f40
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744713727812
+status: 3
+tags: []
+user_id: kgupta

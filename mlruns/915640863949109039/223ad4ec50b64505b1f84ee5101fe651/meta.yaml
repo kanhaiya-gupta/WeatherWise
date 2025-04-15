@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/223ad4ec50b64505b1f84ee5101fe651/artifacts
+end_time: 1744714127937
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 223ad4ec50b64505b1f84ee5101fe651
+run_name: adorable-mink-128
+run_uuid: 223ad4ec50b64505b1f84ee5101fe651
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714127850
+status: 3
+tags: []
+user_id: kgupta

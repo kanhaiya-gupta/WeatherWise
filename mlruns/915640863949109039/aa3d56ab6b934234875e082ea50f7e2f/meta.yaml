@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/aa3d56ab6b934234875e082ea50f7e2f/artifacts
+end_time: 1744714869428
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: aa3d56ab6b934234875e082ea50f7e2f
+run_name: intrigued-wren-586
+run_uuid: aa3d56ab6b934234875e082ea50f7e2f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714869113
+status: 3
+tags: []
+user_id: kgupta

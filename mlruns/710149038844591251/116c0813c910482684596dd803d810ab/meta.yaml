@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/710149038844591251/116c0813c910482684596dd803d810ab/artifacts
+end_time: 1744715599933
+entry_point_name: ''
+experiment_id: '710149038844591251'
+lifecycle_stage: active
+run_id: 116c0813c910482684596dd803d810ab
+run_name: nosy-bear-813
+run_uuid: 116c0813c910482684596dd803d810ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744715599784
+status: 3
+tags: []
+user_id: kgupta

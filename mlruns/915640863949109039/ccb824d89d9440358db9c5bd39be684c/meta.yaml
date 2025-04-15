@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/ccb824d89d9440358db9c5bd39be684c/artifacts
+end_time: 1744716279372
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: ccb824d89d9440358db9c5bd39be684c
+run_name: agreeable-wolf-461
+run_uuid: ccb824d89d9440358db9c5bd39be684c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744716279126
+status: 3
+tags: []
+user_id: kgupta

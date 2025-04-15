@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/e71ffc0243964e43bf5535c4b78de54a/artifacts
+end_time: 1744713624536
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: e71ffc0243964e43bf5535c4b78de54a
+run_name: nimble-lynx-602
+run_uuid: e71ffc0243964e43bf5535c4b78de54a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744713624422
+status: 3
+tags: []
+user_id: kgupta

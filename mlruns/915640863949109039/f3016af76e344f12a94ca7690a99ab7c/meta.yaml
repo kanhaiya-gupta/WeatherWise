@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/f3016af76e344f12a94ca7690a99ab7c/artifacts
+end_time: 1744714781922
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: f3016af76e344f12a94ca7690a99ab7c
+run_name: valuable-sponge-109
+run_uuid: f3016af76e344f12a94ca7690a99ab7c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714781328
+status: 4
+tags: []
+user_id: kgupta

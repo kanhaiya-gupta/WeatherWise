@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/e9c41043577d4e6a80990c0e4fabc388/artifacts
+end_time: 1744715343784
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: e9c41043577d4e6a80990c0e4fabc388
+run_name: salty-ram-877
+run_uuid: e9c41043577d4e6a80990c0e4fabc388
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744715343573
+status: 3
+tags: []
+user_id: kgupta

@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/a697ed96243f4b199620dbd97fe1c03d/artifacts
+end_time: 1744713908561
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: a697ed96243f4b199620dbd97fe1c03d
+run_name: abundant-shark-597
+run_uuid: a697ed96243f4b199620dbd97fe1c03d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744713908365
+status: 3
+tags: []
+user_id: kgupta

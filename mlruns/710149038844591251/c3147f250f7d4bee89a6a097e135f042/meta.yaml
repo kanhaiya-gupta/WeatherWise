@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/710149038844591251/c3147f250f7d4bee89a6a097e135f042/artifacts
+end_time: 1744715424879
+entry_point_name: ''
+experiment_id: '710149038844591251'
+lifecycle_stage: active
+run_id: c3147f250f7d4bee89a6a097e135f042
+run_name: selective-mouse-200
+run_uuid: c3147f250f7d4bee89a6a097e135f042
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744715424745
+status: 3
+tags: []
+user_id: kgupta

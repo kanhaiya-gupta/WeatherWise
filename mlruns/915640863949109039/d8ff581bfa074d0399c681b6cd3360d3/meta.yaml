@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/d8ff581bfa074d0399c681b6cd3360d3/artifacts
+end_time: 1744714795817
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: d8ff581bfa074d0399c681b6cd3360d3
+run_name: placid-fish-595
+run_uuid: d8ff581bfa074d0399c681b6cd3360d3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714794988
+status: 4
+tags: []
+user_id: kgupta

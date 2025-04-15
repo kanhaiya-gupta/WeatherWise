@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/710149038844591251/037b015b38bb4d8682d802c5ef6320c1/artifacts
+end_time: 1744715531758
+entry_point_name: ''
+experiment_id: '710149038844591251'
+lifecycle_stage: active
+run_id: 037b015b38bb4d8682d802c5ef6320c1
+run_name: lyrical-deer-889
+run_uuid: 037b015b38bb4d8682d802c5ef6320c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744715531617
+status: 3
+tags: []
+user_id: kgupta

@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/f68a2e99d507426cbed18dd9cfc70fce/artifacts
+end_time: 1744714854380
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: f68a2e99d507426cbed18dd9cfc70fce
+run_name: caring-croc-32
+run_uuid: f68a2e99d507426cbed18dd9cfc70fce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714853900
+status: 4
+tags: []
+user_id: kgupta

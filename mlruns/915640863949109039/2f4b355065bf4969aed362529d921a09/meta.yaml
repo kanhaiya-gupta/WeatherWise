@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/2f4b355065bf4969aed362529d921a09/artifacts
+end_time: 1744714673196
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 2f4b355065bf4969aed362529d921a09
+run_name: silent-crane-378
+run_uuid: 2f4b355065bf4969aed362529d921a09
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714672485
+status: 4
+tags: []
+user_id: kgupta

@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/3f9de86557904b78b77a4dc35414a2a3/artifacts
+end_time: 1744714673320
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 3f9de86557904b78b77a4dc35414a2a3
+run_name: thundering-goat-896
+run_uuid: 3f9de86557904b78b77a4dc35414a2a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714672662
+status: 4
+tags: []
+user_id: kgupta

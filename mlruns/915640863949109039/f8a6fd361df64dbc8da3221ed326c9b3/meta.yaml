@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/f8a6fd361df64dbc8da3221ed326c9b3/artifacts
+end_time: 1744714049089
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: f8a6fd361df64dbc8da3221ed326c9b3
+run_name: calm-kit-280
+run_uuid: f8a6fd361df64dbc8da3221ed326c9b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714048972
+status: 3
+tags: []
+user_id: kgupta

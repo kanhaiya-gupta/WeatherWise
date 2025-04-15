@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/25db1ad6ed564435b62889ec5d7baaf1/artifacts
+end_time: 1744714988707
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 25db1ad6ed564435b62889ec5d7baaf1
+run_name: valuable-perch-364
+run_uuid: 25db1ad6ed564435b62889ec5d7baaf1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714988452
+status: 3
+tags: []
+user_id: kgupta

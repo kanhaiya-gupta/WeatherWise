@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/05607ef043974d93af0885d86267d632/artifacts
+end_time: 1744714522860
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 05607ef043974d93af0885d86267d632
+run_name: big-conch-940
+run_uuid: 05607ef043974d93af0885d86267d632
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714522373
+status: 4
+tags: []
+user_id: kgupta

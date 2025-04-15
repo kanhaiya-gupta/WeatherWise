@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/e2dfe99571f44b6a981b57ee5090cf96/artifacts
+end_time: 1744714225791
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: e2dfe99571f44b6a981b57ee5090cf96
+run_name: suave-dolphin-552
+run_uuid: e2dfe99571f44b6a981b57ee5090cf96
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714225660
+status: 3
+tags: []
+user_id: kgupta

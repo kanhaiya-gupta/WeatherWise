@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/8e33e5ae70f9427f8243c0bb736fcaa0/artifacts
+end_time: 1744716107797
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 8e33e5ae70f9427f8243c0bb736fcaa0
+run_name: gaudy-frog-6
+run_uuid: 8e33e5ae70f9427f8243c0bb736fcaa0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744716107616
+status: 3
+tags: []
+user_id: kgupta

@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/ba075df522fe4ad0b2edfcac2ea62591/artifacts
+end_time: 1744715598496
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: ba075df522fe4ad0b2edfcac2ea62591
+run_name: crawling-eel-326
+run_uuid: ba075df522fe4ad0b2edfcac2ea62591
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744715598231
+status: 3
+tags: []
+user_id: kgupta

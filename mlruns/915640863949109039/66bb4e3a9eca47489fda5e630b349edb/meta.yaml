@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/66bb4e3a9eca47489fda5e630b349edb/artifacts
+end_time: 1744713742615
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 66bb4e3a9eca47489fda5e630b349edb
+run_name: bittersweet-pig-37
+run_uuid: 66bb4e3a9eca47489fda5e630b349edb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744713742454
+status: 3
+tags: []
+user_id: kgupta

@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/dc3ac3a109bf495a9c8ed1a153bc1ff4/artifacts
+end_time: 1744714781909
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: dc3ac3a109bf495a9c8ed1a153bc1ff4
+run_name: chill-crab-145
+run_uuid: dc3ac3a109bf495a9c8ed1a153bc1ff4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714781315
+status: 4
+tags: []
+user_id: kgupta

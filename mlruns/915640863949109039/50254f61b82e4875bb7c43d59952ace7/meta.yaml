@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/50254f61b82e4875bb7c43d59952ace7/artifacts
+end_time: 1744714718578
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 50254f61b82e4875bb7c43d59952ace7
+run_name: fortunate-chimp-222
+run_uuid: 50254f61b82e4875bb7c43d59952ace7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714717838
+status: 4
+tags: []
+user_id: kgupta

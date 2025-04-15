@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/aab477acc05d4198821cb94e083f864e/artifacts
+end_time: 1744715681059
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: aab477acc05d4198821cb94e083f864e
+run_name: vaunted-lamb-814
+run_uuid: aab477acc05d4198821cb94e083f864e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744715680636
+status: 3
+tags: []
+user_id: kgupta

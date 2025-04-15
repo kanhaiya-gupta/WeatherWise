@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/dd5824549e2741d18287ff9180643036/artifacts
+end_time: 1744715676889
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: dd5824549e2741d18287ff9180643036
+run_name: wistful-gull-798
+run_uuid: dd5824549e2741d18287ff9180643036
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744715676621
+status: 3
+tags: []
+user_id: kgupta

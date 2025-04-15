@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/cb5f582585c54ac18e368d788702f61b/artifacts
+end_time: 1744714630600
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: cb5f582585c54ac18e368d788702f61b
+run_name: flawless-crab-451
+run_uuid: cb5f582585c54ac18e368d788702f61b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714630165
+status: 4
+tags: []
+user_id: kgupta

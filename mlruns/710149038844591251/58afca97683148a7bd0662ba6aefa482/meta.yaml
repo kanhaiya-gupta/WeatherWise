@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/710149038844591251/58afca97683148a7bd0662ba6aefa482/artifacts
+end_time: 1744714041499
+entry_point_name: ''
+experiment_id: '710149038844591251'
+lifecycle_stage: active
+run_id: 58afca97683148a7bd0662ba6aefa482
+run_name: capricious-crane-587
+run_uuid: 58afca97683148a7bd0662ba6aefa482
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714041213
+status: 3
+tags: []
+user_id: kgupta

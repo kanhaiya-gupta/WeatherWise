@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/e70352205ff647ff8612f7b941170357/artifacts
+end_time: 1744716577730
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: e70352205ff647ff8612f7b941170357
+run_name: defiant-dog-581
+run_uuid: e70352205ff647ff8612f7b941170357
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744716577597
+status: 3
+tags: []
+user_id: kgupta

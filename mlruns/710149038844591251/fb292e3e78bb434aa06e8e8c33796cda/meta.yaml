@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/710149038844591251/fb292e3e78bb434aa06e8e8c33796cda/artifacts
+end_time: 1744715345017
+entry_point_name: ''
+experiment_id: '710149038844591251'
+lifecycle_stage: active
+run_id: fb292e3e78bb434aa06e8e8c33796cda
+run_name: bald-mare-450
+run_uuid: fb292e3e78bb434aa06e8e8c33796cda
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744715344869
+status: 3
+tags: []
+user_id: kgupta

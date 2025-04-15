@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/ec9845a7729b4804b8e0f85bcdd6b78f/artifacts
+end_time: 1744715598762
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: ec9845a7729b4804b8e0f85bcdd6b78f
+run_name: powerful-foal-171
+run_uuid: ec9845a7729b4804b8e0f85bcdd6b78f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744715598641
+status: 3
+tags: []
+user_id: kgupta

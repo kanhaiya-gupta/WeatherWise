@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/c24fe72d36aa437c8c43c0280ad535b3/artifacts
+end_time: 1744712863908
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: c24fe72d36aa437c8c43c0280ad535b3
+run_name: angry-mule-577
+run_uuid: c24fe72d36aa437c8c43c0280ad535b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744712863847
+status: 4
+tags: []
+user_id: kgupta

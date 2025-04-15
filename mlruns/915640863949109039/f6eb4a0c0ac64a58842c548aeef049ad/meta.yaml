@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/f6eb4a0c0ac64a58842c548aeef049ad/artifacts
+end_time: 1744714718558
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: f6eb4a0c0ac64a58842c548aeef049ad
+run_name: orderly-snipe-6
+run_uuid: f6eb4a0c0ac64a58842c548aeef049ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714717900
+status: 4
+tags: []
+user_id: kgupta

@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/a5f70c873b6b45ff9106a0bd83584d9a/artifacts
+end_time: 1744714854584
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: a5f70c873b6b45ff9106a0bd83584d9a
+run_name: kindly-hound-672
+run_uuid: a5f70c873b6b45ff9106a0bd83584d9a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714854113
+status: 4
+tags: []
+user_id: kgupta

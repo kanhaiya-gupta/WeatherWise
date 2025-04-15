@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/ad764e63f6254056969de349bb013c3d/artifacts
+end_time: 1744715508874
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: ad764e63f6254056969de349bb013c3d
+run_name: glamorous-calf-471
+run_uuid: ad764e63f6254056969de349bb013c3d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744715508641
+status: 3
+tags: []
+user_id: kgupta

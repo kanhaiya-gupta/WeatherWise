@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/7946d8ef090a490281a7f2404e1deb73/artifacts
+end_time: 1744714263235
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 7946d8ef090a490281a7f2404e1deb73
+run_name: bemused-gull-778
+run_uuid: 7946d8ef090a490281a7f2404e1deb73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714263116
+status: 3
+tags: []
+user_id: kgupta

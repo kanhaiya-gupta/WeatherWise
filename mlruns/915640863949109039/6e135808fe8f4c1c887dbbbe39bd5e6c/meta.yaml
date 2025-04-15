@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/6e135808fe8f4c1c887dbbbe39bd5e6c/artifacts
+end_time: 1744714647990
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 6e135808fe8f4c1c887dbbbe39bd5e6c
+run_name: masked-shoat-210
+run_uuid: 6e135808fe8f4c1c887dbbbe39bd5e6c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714647437
+status: 4
+tags: []
+user_id: kgupta

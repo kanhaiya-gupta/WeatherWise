@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/710149038844591251/bcdd9ab62711468f818ac5b539bb1bd8/artifacts
+end_time: 1744716191829
+entry_point_name: ''
+experiment_id: '710149038844591251'
+lifecycle_stage: active
+run_id: bcdd9ab62711468f818ac5b539bb1bd8
+run_name: bittersweet-goat-746
+run_uuid: bcdd9ab62711468f818ac5b539bb1bd8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744716191660
+status: 3
+tags: []
+user_id: kgupta

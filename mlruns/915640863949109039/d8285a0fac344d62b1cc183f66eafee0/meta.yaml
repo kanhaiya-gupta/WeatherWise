@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/d8285a0fac344d62b1cc183f66eafee0/artifacts
+end_time: 1744716577414
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: d8285a0fac344d62b1cc183f66eafee0
+run_name: nebulous-hawk-252
+run_uuid: d8285a0fac344d62b1cc183f66eafee0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744716577097
+status: 3
+tags: []
+user_id: kgupta

@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/1a82284f6bc34cea9ba43774c49ef3a3/artifacts
+end_time: 1744714533951
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 1a82284f6bc34cea9ba43774c49ef3a3
+run_name: suave-crow-949
+run_uuid: 1a82284f6bc34cea9ba43774c49ef3a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714533592
+status: 4
+tags: []
+user_id: kgupta

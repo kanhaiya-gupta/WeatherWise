@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/4dd9470d44e24c239764bf729544ae19/artifacts
+end_time: 1744714781907
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 4dd9470d44e24c239764bf729544ae19
+run_name: sedate-conch-410
+run_uuid: 4dd9470d44e24c239764bf729544ae19
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714781314
+status: 4
+tags: []
+user_id: kgupta

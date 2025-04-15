@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/917ae8452e9a43d2a84b24591c519122/artifacts
+end_time: 1744714431457
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 917ae8452e9a43d2a84b24591c519122
+run_name: shivering-rook-630
+run_uuid: 917ae8452e9a43d2a84b24591c519122
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714431228
+status: 4
+tags: []
+user_id: kgupta

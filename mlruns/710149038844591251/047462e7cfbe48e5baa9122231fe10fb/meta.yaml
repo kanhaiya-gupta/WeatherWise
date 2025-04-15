@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/710149038844591251/047462e7cfbe48e5baa9122231fe10fb/artifacts
+end_time: 1744716578300
+entry_point_name: ''
+experiment_id: '710149038844591251'
+lifecycle_stage: active
+run_id: 047462e7cfbe48e5baa9122231fe10fb
+run_name: clumsy-lamb-6
+run_uuid: 047462e7cfbe48e5baa9122231fe10fb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744716578122
+status: 3
+tags: []
+user_id: kgupta

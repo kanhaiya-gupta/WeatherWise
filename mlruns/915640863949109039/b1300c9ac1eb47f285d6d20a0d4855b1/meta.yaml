@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/b1300c9ac1eb47f285d6d20a0d4855b1/artifacts
+end_time: 1744713392655
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: b1300c9ac1eb47f285d6d20a0d4855b1
+run_name: dapper-kite-741
+run_uuid: b1300c9ac1eb47f285d6d20a0d4855b1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744713392527
+status: 3
+tags: []
+user_id: kgupta

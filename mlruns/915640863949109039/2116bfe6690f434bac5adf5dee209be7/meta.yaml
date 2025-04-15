@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/2116bfe6690f434bac5adf5dee209be7/artifacts
+end_time: 1744716536207
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 2116bfe6690f434bac5adf5dee209be7
+run_name: trusting-tern-269
+run_uuid: 2116bfe6690f434bac5adf5dee209be7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744716536117
+status: 3
+tags: []
+user_id: kgupta

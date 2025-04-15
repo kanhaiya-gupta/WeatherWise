@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/df5437df350f43deb0699438a0285d7b/artifacts
+end_time: 1744714533804
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: df5437df350f43deb0699438a0285d7b
+run_name: bouncy-flea-78
+run_uuid: df5437df350f43deb0699438a0285d7b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714533452
+status: 4
+tags: []
+user_id: kgupta

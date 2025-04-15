@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/90c7dc5896e44f2b8cf6834739e723ea/artifacts
+end_time: 1744713447187
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 90c7dc5896e44f2b8cf6834739e723ea
+run_name: grandiose-fawn-210
+run_uuid: 90c7dc5896e44f2b8cf6834739e723ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744713447068
+status: 3
+tags: []
+user_id: kgupta

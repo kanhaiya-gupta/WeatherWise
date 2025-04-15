@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/a1cbd05a24e64b87b144c29afc2b67bf/artifacts
+end_time: 1744715423754
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: a1cbd05a24e64b87b144c29afc2b67bf
+run_name: sneaky-duck-113
+run_uuid: a1cbd05a24e64b87b144c29afc2b67bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744715423559
+status: 3
+tags: []
+user_id: kgupta

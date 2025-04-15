@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/ccff57188ced4187aa72d645990b5184/artifacts
+end_time: 1744710770276
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: ccff57188ced4187aa72d645990b5184
+run_name: redolent-deer-368
+run_uuid: ccff57188ced4187aa72d645990b5184
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744710760263
+status: 3
+tags: []
+user_id: kgupta

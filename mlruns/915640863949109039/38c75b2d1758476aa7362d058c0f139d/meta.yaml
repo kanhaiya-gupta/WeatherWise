@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kanha/Independent_Research/WeatherWise/mlruns/915640863949109039/38c75b2d1758476aa7362d058c0f139d/artifacts
+end_time: 1744714997179
+entry_point_name: ''
+experiment_id: '915640863949109039'
+lifecycle_stage: active
+run_id: 38c75b2d1758476aa7362d058c0f139d
+run_name: righteous-horse-202
+run_uuid: 38c75b2d1758476aa7362d058c0f139d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714996895
+status: 3
+tags: []
+user_id: kgupta
