@@ -23,11 +23,14 @@ config = load_config()
 # Assign configuration values to constants
 DATASET_TYPES = config.get('dataset_types', ['test', 'train'])
 DROP_COLNAMES = config.get('drop_colnames', ['Date'])
-TARGET_COLUMN = config.get('target_column', 'RainTomorrow')
-RAW_DATASET = os.path.join(BASE_DIR, config.get('raw_dataset', 'data/raw/weather.csv'))
-PROCESSED_DATASET = os.path.join(BASE_DIR, config.get('processed_dataset', 'data/processed/weather.csv'))
-REPORTS = config.get('reports', 'reports')
-MODELS = config.get('models', 'models')
+TARGET_COLUMN = config['dataset']['target_column']  # Get target column directly from dataset config
+RAW_DATASET = os.path.join(BASE_DIR, config.get('preprocessing', {}).get('raw_data_path', 'data/raw/weather.csv'))
+PROCESSED_DATASET = os.path.join(BASE_DIR, config.get('preprocessing', {}).get('processed_data_path', 'data/processed/weather.csv'))
+REPORTS = config.get('evaluation', {}).get('reports_dir', 'reports')
+MODELS = config.get('training', {}).get('model_save_path', 'models').rsplit('/', 1)[0]  # Extract directory
+MODEL_PATH = os.path.join(BASE_DIR, config.get('training', {}).get('model_save_path', 'models/trained_model_random_forest.pkl'))
+MLFLOW_TRACKING_URI = config.get('mlflow', {}).get('tracking_uri', 'http://localhost:5000')
+MLFLOW_EXPERIMENT_NAME = config.get('training', {}).get('experiment_name', 'weather_prediction')
 BEST_PAR = config.get('best_par', 'rfc_best_params.json')
 
 # Define directories
@@ -43,7 +46,7 @@ BEST_PAR_PATH = os.path.join(REPORTS_DIR, BEST_PAR)
 def delete_and_recreate_dir(path):
     try:
         shutil.rmtree(path)
-    except:
+    except FileNotFoundError:
         pass
     finally:
         Path(path).mkdir(parents=True, exist_ok=True)

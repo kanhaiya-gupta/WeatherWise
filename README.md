@@ -27,6 +27,9 @@
 - **Containerization**: Docker support for consistent development and deployment.
 - **Testing**: Unit tests for preprocessing and model components.
 - **Reporting**: Generates metrics, confusion matrices, and ROC curves.
+- **Advanced Preprocessing**: Custom `WeatherDataPreprocessor` class for robust data handling.
+- **Logging**: Comprehensive logging system for monitoring and debugging.
+- **MLflow Integration**: Experiment tracking and model versioning.
 
 ## Project Structure
 
@@ -34,10 +37,12 @@
 WeatherWise/
 ├── .dvc/                       # DVC configuration and cache
 ├── .github/workflows/          # GitHub Actions CI/CD workflows
-│   └── ci-cd.yml
+│   ├── scripts.yml            # Scripts and linting workflow
+│   ├── dvc.yml               # DVC pipeline workflow
+│   └── docker.yml            # Docker build and push workflow
 ├── config/                     # Configuration files
-│   ├── config.yaml
-│   └── hp_config.json          # Hyperparameter tuning settings
+│   ├── config.yaml            # Main configuration
+│   └── hp_config.json         # Hyperparameter tuning settings
 ├── data/                       # Datasets
 │   ├── raw/                    # Unprocessed data
 │   │   └── weather.csv
@@ -47,8 +52,9 @@ WeatherWise/
 │   ├── DVC_DRIVE.txt
 │   ├── DVC_workflow_README.md
 │   └── FastAPI_README.md
+├── logs/                       # Application logs
 ├── models/                     # Trained models
-│   └── trained_model_random_forest.pkl
+│   └── weather_model.joblib
 ├── notebooks/                  # Jupyter notebooks for experimentation
 ├── reports/                    # Metrics and visualizations
 │   ├── confusion_matrix.png
@@ -63,6 +69,8 @@ WeatherWise/
 ├── src/                        # Source code
 │   ├── api/                    # FastAPI application
 │   │   └── app.py
+│   ├── data/                   # Data processing
+│   │   └── processor.py
 │   ├── evaluation/             # Model evaluation
 │   │   └── evaluate.py
 │   ├── models/                 # Model definitions
@@ -96,7 +104,7 @@ WeatherWise/
 - **DVC**: For data and model versioning
 - **Docker**: Optional, for containerized deployment
 - **GitHub Account**: For CI/CD and optional DagsHub integration
-- **Dependencies**: Listed in `requirements.txt` (e.g., `fastapi`, `uvicorn`, `pandas`, `joblib`, `pytest`, `dvc`)
+- **Dependencies**: Listed in `requirements.txt` (e.g., `fastapi`, `uvicorn`, `pandas`, `joblib`, `pytest`, `dvc`, `mlflow`)
 
 ## Installation
 1. **Clone the Repository**:
@@ -120,11 +128,12 @@ WeatherWise/
    pip install -r requirements.txt
    ```
 
-4. **Set Up Environment Variables** (optional):
+4. **Set Up Environment Variables**:
    - Create a `.env` file or modify the existing one to include paths like `MODEL_PATH` if needed.
    - Example:
      ```
-     MODEL_PATH=models/trained_model_random_forest.pkl
+     MODEL_PATH=models/weather_model.joblib
+     MLFLOW_TRACKING_URI=mlruns
      ```
 
 5. **Run Setup Script** (optional):
@@ -171,145 +180,111 @@ DVC is used to version datasets, models, and manage reproducible ML pipelines.
    ```
    This executes the pipeline, generating processed data, trained models, and reports.
 
-5. **Push Updates**:
-   ```bash
-   dvc push
-   git add dvc.yaml dvc.lock
-   git commit -m "Update DVC pipeline"
-   git push
-   ```
-
-6. **Visualize Pipeline**:
-   ```bash
-   dvc dag
-   ```
-
-### Key DVC Commands
-| Task                   | Command                          |
-|------------------------|----------------------------------|
-| Initialize DVC         | `dvc init`                       |
-| Track data             | `dvc add <path>`                 |
-| Add remote storage     | `dvc remote add -d origin <url>` |
-| Push data              | `dvc push`                       |
-| Pull data              | `dvc pull`                       |
-| Run pipeline           | `dvc repro`                      |
-| Visualize pipeline     | `dvc dag`                        |
-
 ## Running the FastAPI Server
-1. **Ensure Model Availability**:
-   - Verify `models/trained_model_random_forest.pkl` exists.
-   - If missing, run the DVC pipeline:
-     ```bash
-     dvc repro
-     ```
 
-2. **Start the Server**:
+1. **Start the Server**:
    ```bash
    python main.py
    ```
-   This starts the FastAPI server on `http://localhost:8000` with auto-reload for development.
+   The server will start at `http://localhost:8000`.
 
-3. **Access the API**:
-   - Open `http://localhost:8000/docs` for interactive Swagger UI.
-   - Use tools like `curl` or Postman for API calls.
-     
-<img src="./docs/WeatherWise_API.png" alt="FastAPI" width="1100" height="600">
+2. **Access the API**:
+   - Interactive documentation: `http://localhost:8000/docs`
+   - Health check: `http://localhost:8000/health`
+   - Prediction endpoint: `http://localhost:8000/predict`
 
-### API Endpoints
-- **GET `/health`**:
-  - **Description**: Check API and model status.
-  - **Response**:
-    ```json
-    {"status": "healthy", "model_loaded": true}
-    ```
-  - **Example**:
-    ```bash
-    curl http://localhost:8000/health
-    ```
-
-- **POST `/predict`**:
-  - **Description**: Predict rainfall probability.
-  - **Request Body** (JSON):
-    ```json
-    {
-                    "Location": 0.543,
-                    "MinTemp": 13.4,
-                    "MaxTemp": 22.9,
-                    "Rainfall": 0.6,
-                    "Evaporation": 4.5,
-                    "Sunshine": 6.7,
-                    "WindGustDir": 0.61,
-                    "WindGustSpeed": 44.0,
-                    "WindDir9am": 0.48,
-                    "WindDir3pm": 0.55,
-                    "WindSpeed9am": 20.0,
-                    "WindSpeed3pm": 24.0,
-                    "Humidity9am": 71.0,
-                    "Humidity3pm": 22.0,
-                    "Pressure9am": 1007.7,
-                    "Pressure3pm": 1007.1,
-                    "Cloud9am": 8.0,
-                    "Cloud3pm": 5.0,
-                    "Temp9am": 16.9,
-                    "Temp3pm": 21.8,
-                    "RainToday": 0,
-                    "RISK_MM": 0.0
-                }
-    ```
-  - **Response**:
-    ```json
-    {"rain_probability": 0.8534}
-    ```
-  - **Example**:
-    ```bash
-    curl -X POST "http://localhost:8000/predict" \
-         -H "Content-Type: application/json" \
-         -d '{ "Location": 0.543, "MinTemp": 13.4, "MaxTemp": 22.9, "Rainfall": 0.6, "Evaporation": 4.5, "Sunshine": 6.7, "WindGustDir": 0.61, "WindGustSpeed": 44.0,
-                "WindDir9am": 0.48, "WindDir3pm": 0.55, "WindSpeed9am": 20.0, "WindSpeed3pm": 24.0, "Humidity9am": 71.0, "Humidity3pm": 22.0, "Pressure9am": 1007.7,
-                "Pressure3pm": 1007.1, "Cloud9am": 8.0, "Cloud3pm": 5.0, "Temp9am": 16.9, "Temp3pm": 21.8, "RainToday": 0, "RISK_MM": 0.0
-            }'
-    ```
+3. **Example Prediction Request**:
+   ```bash
+   curl -X POST "http://localhost:8000/predict" \
+        -H "Content-Type: application/json" \
+        -d '{
+          "Location": "Albury",
+          "MinTemp": 13.4,
+          "MaxTemp": 22.9,
+          "Rainfall": 0.6,
+          "Evaporation": 4.5,
+          "Sunshine": 6.7,
+          "WindGustDir": "NNW",
+          "WindGustSpeed": 44.0,
+          "WindDir9am": "NW",
+          "WindDir3pm": "NNW",
+          "WindSpeed9am": 20.0,
+          "WindSpeed3pm": 24.0,
+          "Humidity9am": 71.0,
+          "Humidity3pm": 22.0,
+          "Pressure9am": 1007.7,
+          "Pressure3pm": 1007.1,
+          "Cloud9am": 8.0,
+          "Cloud3pm": 5.0,
+          "Temp9am": 16.9,
+          "Temp3pm": 21.8,
+          "RainToday": "No",
+          "RISK_MM": 0.0
+        }'
+   ```
 
 ## Using Docker
-1. **Build and Run**:
+
+1. **Build and Run with Docker Compose**:
    ```bash
    docker-compose up --build
    ```
+
+2. **Access the API**:
    The API will be available at `http://localhost:8000`.
 
-2. **Stop Containers**:
-   ```bash
-   docker-compose down
-   ```
-
 ## CI/CD
-GitHub Actions automates the CI/CD pipeline (see `.github/workflows/ci-cd.yml`). On push or pull request to the `main` branch:
-- **Linting**: Runs checks on source code.
-- **Testing**: Executes `pytest` on unit tests.
-- **Training**: Runs the DVC pipeline for preprocessing, training, and evaluation.
-- **Deployment**: Builds and pushes a Docker image to DockerHub (requires `DOCKER_USERNAME` and `DOCKER_PASSWORD` secrets).
+
+The project uses three separate GitHub Actions workflows:
+
+1. **Scripts Workflow** (`scripts.yml`):
+   - Runs linting and testing
+   - Executes on pull requests and pushes to main
+
+2. **DVC Pipeline Workflow** (`dvc.yml`):
+   - Executes the DVC pipeline
+   - Runs on schedule and manual triggers
+   - Generates and stores model artifacts
+
+3. **Docker Workflow** (`docker.yml`):
+   - Builds and pushes Docker images
+   - Runs on successful DVC pipeline completion
+   - Requires DockerHub credentials
 
 ## Testing
-Run unit tests for preprocessing and model components:
-```bash
-pytest tests/
-```
+
+1. **Run Unit Tests**:
+   ```bash
+   pytest tests/
+   ```
+
+2. **Test Coverage**:
+   ```bash
+   pytest --cov=src tests/
+   ```
 
 ## Troubleshooting
-- **DVC Issues**:
-  - **Data Not Found**: Run `dvc pull` to fetch data from remote.
-  - **Pipeline Errors**: Check `dvc.yaml` for correct paths and dependencies.
-- **Model Not Found**:
-  - Ensure `models/trained_model_random_forest.pkl` exists.
-  - Verify `MODEL_PATH` in `.env` or `src/api/app.py`.
-- **Port Conflicts**:
-  - Change the port in `main.py` (e.g., `port=8001`) if `8000` is in use.
-- **Dependency Errors**:
-  - Run `pip install -r requirements.txt` again.
-  - Check `pip list` for missing packages.
-- **API Errors**:
-  - Validate input JSON against the `WeatherInput` schema.
-  - Review server logs for details.
+
+1. **Model Loading Issues**:
+   - Check the `MODEL_PATH` environment variable
+   - Verify the model file exists at the specified path
+   - Ensure the model file is not corrupted
+
+2. **Preprocessing Errors**:
+   - Verify all required features are present in the input data
+   - Check the data types of input features
+   - Ensure categorical features match the training data
+
+3. **API Connection Issues**:
+   - Verify the server is running
+   - Check the port is not in use
+   - Ensure all required environment variables are set
+
+4. **DVC Pipeline Failures**:
+   - Check the DVC cache
+   - Verify remote storage configuration
+   - Ensure all dependencies are installed
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+MIT License

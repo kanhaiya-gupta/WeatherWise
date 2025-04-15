@@ -1,11 +1,62 @@
-dataset_types:
-  - test
-  - train
-drop_colnames:
-  - Date
-target_column: RainTomorrow
-raw_dataset: data/raw/weather.csv
-processed_dataset: data/processed/weather.csv
-reports: reports
-models: models
-best_par: rfc_best_params.json
+# Dataset configuration
+dataset:
+  types:
+    - test
+    - train
+  drop_columns:
+    - Date
+  target_column: RainTomorrow
+  categorical_columns:
+    - Location
+    - WindGustDir
+    - WindDir9am
+    - WindDir3pm
+    - RainToday
+  feature_columns:
+    - Location
+    - MinTemp
+    - MaxTemp
+    - Rainfall
+    - Evaporation
+    - Sunshine
+    - WindGustDir
+    - WindGustSpeed
+    - WindDir9am
+    - WindDir3pm
+    - WindSpeed9am
+    - WindSpeed3pm
+    - Humidity9am
+    - Humidity3pm
+    - Pressure9am
+    - Pressure3pm
+    - Cloud9am
+    - Cloud3pm
+    - Temp9am
+    - Temp3pm
+    - RainToday
+    - RISK_MM
+  paths:
+    raw: data/raw/weather.csv
+    processed: data/processed/weather.csv
+
+# Output directories
+directories:
+  reports: reports
+  models: models
+
+# Model configuration
+model:
+  type: RandomForestClassifier
+  params_file: reports/rfc_best_params.json  # Best parameters from hyperparameter tuning
+  path: models/weather_model.joblib  # Path to save the trained model
+
+# Training configuration
+training:
+  test_size: 0.2
+  random_state: 42
+  cv_folds: 5
+
+# MLflow configuration
+mlflow:
+  tracking_uri: mlruns
+  experiment_name: weather_prediction
