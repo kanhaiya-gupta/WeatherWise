@@ -1,0 +1,2 @@
+2025-04-15 12:20:30,429 - weatherwise - INFO - Successfully loaded model from models\weather_model.joblib
+2025-04-15 12:20:30,554 - weatherwise - INFO - Successfully fitted scaler and imputer

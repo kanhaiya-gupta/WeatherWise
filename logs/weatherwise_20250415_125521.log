@@ -1,0 +1,2 @@
+2025-04-15 12:55:21,120 - weatherwise - INFO - Successfully loaded model from models\weather_model.joblib
+2025-04-15 12:55:22,885 - weatherwise - ERROR - Error during initialization: Shape of passed values is (25000, 17), indices imply (25000, 22)

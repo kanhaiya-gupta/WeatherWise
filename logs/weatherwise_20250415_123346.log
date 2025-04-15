@@ -1,0 +1,4 @@
+2025-04-15 12:33:46,127 - weatherwise - INFO - Successfully loaded model from models\weather_model.joblib
+2025-04-15 12:33:46,741 - weatherwise - INFO - Successfully loaded model from models\weather_model.joblib
+2025-04-15 12:33:47,290 - weatherwise - ERROR - Error during initialization: 'raw_data_path'
+2025-04-15 12:33:47,925 - weatherwise - ERROR - Error during initialization: 'raw_data_path'

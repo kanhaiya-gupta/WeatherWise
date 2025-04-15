@@ -1,0 +1,77 @@
+2025-04-15 12:47:28,127 - weatherwise - INFO - Successfully loaded model from models\weather_model.joblib
+2025-04-15 12:47:29,092 - weatherwise - INFO - Successfully initialized preprocessor with training data
+2025-04-15 12:47:43,202 - weatherwise - INFO - Received prediction request with data: {'Location': 'Sydney', 'MinTemp': 13.4, 'MaxTemp': 22.9, 'Rainfall': 0.6, 'Evaporation': 4.5, 'Sunshine': 6.7, 'WindGustDir': 'NNW', 'WindGustSpeed': 44.0, 'WindDir9am': 'NW', 'WindDir3pm': 'NNW', 'WindSpeed9am': 20.0, 'WindSpeed3pm': 24.0, 'Humidity9am': 71.0, 'Humidity3pm': 22.0, 'Pressure9am': 1007.7, 'Pressure3pm': 1007.1, 'Cloud9am': 8.0, 'Cloud3pm': 5.0, 'Temp9am': 16.9, 'Temp3pm': 21.8, 'RainToday': 'No', 'RISK_MM': 0.0}
+2025-04-15 12:47:43,209 - weatherwise - ERROR - Error during preprocessing: Cannot use mean strategy with non-numeric data:
+could not convert string to float: 'Sydney'
+2025-04-15 12:47:43,210 - weatherwise - ERROR - Prediction error: Cannot use mean strategy with non-numeric data:
+could not convert string to float: 'Sydney'
+Traceback (most recent call last):
+  File "C:\Users\kanha\Independent_Research\WeatherWise\src\api\app.py", line 208, in predict_rainfall
+    processed_data = preprocess_input(input_data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kanha\Independent_Research\WeatherWise\src\api\app.py", line 165, in preprocess_input
+    processed_data = preprocessor.transform_new_data(data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kanha\Independent_Research\WeatherWise\src\preprocessing\preprocess.py", line 257, in transform_new_data
+    X_numeric_imputed = self.imputer.transform(X_numeric)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kanha\anaconda3\envs\ml_env\Lib\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kanha\anaconda3\envs\ml_env\Lib\site-packages\sklearn\impute\_base.py", line 607, in transform
+    X = self._validate_input(X, in_fit=False)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kanha\anaconda3\envs\ml_env\Lib\site-packages\sklearn\impute\_base.py", line 361, in _validate_input
+    raise new_ve from None
+ValueError: Cannot use mean strategy with non-numeric data:
+could not convert string to float: 'Sydney'
+2025-04-15 12:48:21,018 - weatherwise - INFO - Received prediction request with data: {'Location': 'Sydney', 'MinTemp': 13.4, 'MaxTemp': 22.9, 'Rainfall': 0.6, 'Evaporation': 4.5, 'Sunshine': 6.7, 'WindGustDir': 'NNW', 'WindGustSpeed': 44.0, 'WindDir9am': 'NW', 'WindDir3pm': 'NNW', 'WindSpeed9am': 20.0, 'WindSpeed3pm': 24.0, 'Humidity9am': 71.0, 'Humidity3pm': 22.0, 'Pressure9am': 1007.7, 'Pressure3pm': 1007.1, 'Cloud9am': 8.0, 'Cloud3pm': 5.0, 'Temp9am': 16.9, 'Temp3pm': 21.8, 'RainToday': 'No', 'RISK_MM': 0.0}
+2025-04-15 12:48:21,028 - weatherwise - ERROR - Error during preprocessing: Cannot use mean strategy with non-numeric data:
+could not convert string to float: 'Sydney'
+2025-04-15 12:48:21,029 - weatherwise - ERROR - Prediction error: Cannot use mean strategy with non-numeric data:
+could not convert string to float: 'Sydney'
+Traceback (most recent call last):
+  File "C:\Users\kanha\Independent_Research\WeatherWise\src\api\app.py", line 208, in predict_rainfall
+    processed_data = preprocess_input(input_data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kanha\Independent_Research\WeatherWise\src\api\app.py", line 165, in preprocess_input
+    processed_data = preprocessor.transform_new_data(data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kanha\Independent_Research\WeatherWise\src\preprocessing\preprocess.py", line 257, in transform_new_data
+    X_numeric_imputed = self.imputer.transform(X_numeric)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kanha\anaconda3\envs\ml_env\Lib\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kanha\anaconda3\envs\ml_env\Lib\site-packages\sklearn\impute\_base.py", line 607, in transform
+    X = self._validate_input(X, in_fit=False)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kanha\anaconda3\envs\ml_env\Lib\site-packages\sklearn\impute\_base.py", line 361, in _validate_input
+    raise new_ve from None
+ValueError: Cannot use mean strategy with non-numeric data:
+could not convert string to float: 'Sydney'
+2025-04-15 12:49:04,369 - weatherwise - INFO - Received prediction request with data: {'Location': 'Sydney', 'MinTemp': 13.4, 'MaxTemp': 22.9, 'Rainfall': 0.6, 'Evaporation': 4.5, 'Sunshine': 6.7, 'WindGustDir': 'NNW', 'WindGustSpeed': 44.0, 'WindDir9am': 'NW', 'WindDir3pm': 'NNW', 'WindSpeed9am': 20.0, 'WindSpeed3pm': 24.0, 'Humidity9am': 71.0, 'Humidity3pm': 22.0, 'Pressure9am': 1007.7, 'Pressure3pm': 1007.1, 'Cloud9am': 8.0, 'Cloud3pm': 5.0, 'Temp9am': 16.9, 'Temp3pm': 21.8, 'RainToday': 'No', 'RISK_MM': 0.0}
+2025-04-15 12:49:04,374 - weatherwise - ERROR - Error during preprocessing: Cannot use mean strategy with non-numeric data:
+could not convert string to float: 'Sydney'
+2025-04-15 12:49:04,374 - weatherwise - ERROR - Prediction error: Cannot use mean strategy with non-numeric data:
+could not convert string to float: 'Sydney'
+Traceback (most recent call last):
+  File "C:\Users\kanha\Independent_Research\WeatherWise\src\api\app.py", line 208, in predict_rainfall
+    processed_data = preprocess_input(input_data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kanha\Independent_Research\WeatherWise\src\api\app.py", line 165, in preprocess_input
+    processed_data = preprocessor.transform_new_data(data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kanha\Independent_Research\WeatherWise\src\preprocessing\preprocess.py", line 257, in transform_new_data
+    X_numeric_imputed = self.imputer.transform(X_numeric)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kanha\anaconda3\envs\ml_env\Lib\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kanha\anaconda3\envs\ml_env\Lib\site-packages\sklearn\impute\_base.py", line 607, in transform
+    X = self._validate_input(X, in_fit=False)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kanha\anaconda3\envs\ml_env\Lib\site-packages\sklearn\impute\_base.py", line 361, in _validate_input
+    raise new_ve from None
+ValueError: Cannot use mean strategy with non-numeric data:
+could not convert string to float: 'Sydney'

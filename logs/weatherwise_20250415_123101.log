@@ -1,0 +1,2 @@
+2025-04-15 12:31:01,545 - weatherwise - INFO - Successfully loaded model from models\weather_model.joblib
+2025-04-15 12:31:01,670 - weatherwise - ERROR - Error during initialization: 'WeatherDataPreprocessor' object has no attribute 'fit'

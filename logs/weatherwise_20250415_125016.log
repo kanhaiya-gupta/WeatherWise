@@ -1,0 +1,2 @@
+2025-04-15 12:50:16,081 - weatherwise - INFO - Successfully loaded model from models\weather_model.joblib
+2025-04-15 12:50:17,545 - weatherwise - INFO - Successfully initialized preprocessor with training data

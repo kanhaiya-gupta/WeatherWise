@@ -1,0 +1,6 @@
+2025-04-15 12:52:59,611 - weatherwise - INFO - Successfully loaded model from models\weather_model.joblib
+2025-04-15 12:52:59,754 - weatherwise - INFO - Successfully loaded model from models\weather_model.joblib
+2025-04-15 12:53:00,972 - weatherwise - ERROR - Error during initialization: Cannot use mean strategy with non-numeric data:
+could not convert string to float: 'Albury'
+2025-04-15 12:53:01,078 - weatherwise - ERROR - Error during initialization: Cannot use mean strategy with non-numeric data:
+could not convert string to float: 'Albury'
