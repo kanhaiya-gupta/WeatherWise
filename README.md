@@ -1,6 +1,6 @@
 # WeatherWise: Automated Machine Learning Pipeline for Weather Prediction
 
-**WeatherWise** is a comprehensive machine learning project designed to predict rainfall probability using a weather dataset. It integrates MLOps best practices, including **GitHub Actions** for CI/CD, **DVC** for data and model versioning, **FastAPI** for model deployment, and hyperparameter tuning for optimization. The project is structured to ensure reproducibility, scalability, and ease of deployment.
+**WeatherWise** is a comprehensive machine learning project designed to predict rainfall probability using a weather dataset. It integrates MLOps best practices, including **GitHub Actions** for CI/CD, **DVC** for data and model versioning, **FastAPI** for model deployment, **MLflow Integration** for experiment tracking and model versioning, and hyperparameter tuning for optimization. The project is structured to ensure reproducibility, scalability, and ease of deployment.
 
 ## Table of Contents
 - [Features](#features)
