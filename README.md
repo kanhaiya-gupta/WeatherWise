@@ -222,6 +222,7 @@ DVC is used to version datasets, models, and manage reproducible ML pipelines.
           "RISK_MM": 0.0
         }'
    ```
+<img src="./docs/WeatherWise_API.png" alt="FastAPI" width="1100" height="600">
 
 ## Using Docker
 
